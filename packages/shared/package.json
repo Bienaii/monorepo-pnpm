@@ -1,0 +1,6 @@
+{
+  "name": "@helipay/shared",
+  "version": "1.0.0",
+  "main": "dist/shared.cjs.js",
+  "module": "dist/shared.esm.bundler.js"
+}

@@ -4,11 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node ./scripts/dev.js",
     "preinstall": "node ./scripts/preinstall.js"
   },
-  "type": "module",
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "vue": "^3.3.4"
+  },
+  "devDependencies": {
+    "esbuild": "^0.18.19",
+    "minimist": "^1.2.8",
+    "typescript": "^5.1.6"
+  }
 }

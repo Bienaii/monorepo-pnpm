@@ -1,0 +1,20 @@
+// TypeScript 编译器的配置文件，TypeScript 编译器可以根据它的规则来对代码进行编译。
+{
+  "compilerOptions": {
+    "outDir": "dist",
+    "target": "esnext", // 目标转化的语法
+    "module": "esnext", // 生成代码的模板标准
+    "moduleResolution": "node", // 模块解析策略，ts默认用node的解析策略，即相对的方式导入
+    "strict": false, // 是否启动所有严格检查的总开关，默认：false
+    "sourceMap": true, // 启动sourcemap调试, 生成目标文件的sourceMap文件
+    "jsx": "preserve", // 指定 jsx 格式
+    "resolveJsonModule": true, // 是否解析 JSON 模块，默认：false。
+    "esModuleInterop": true, // 是否通过为所有导入模块创建命名空间对象，允许CommonJS和ES模块之间的互操作性，开启改选项时，也自动开启allowSyntheticDefaultImports选项，默认：false。
+    "lib": ["esnext", "dom"], // 指定项目运行时使用的库。此处为支持esnext和dom语法
+    "baseUrl": "./", // 引入包的路径,表示从当前路径开始引入
+    "isolatedModules": true,
+    "paths": {
+      "@helipay/*": ["packages/*/src"] // 引用文件路径
+    }
+  },
+}

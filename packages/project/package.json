@@ -1,0 +1,12 @@
+{
+  "name": "@helipay/project",
+  "version": "1.0.0",
+  "main": "dist/project.cjs.js",
+  "module": "dist/project.esm.bundler.js",
+  "dependencies": {
+    "@helipay/shared": "workspace:^1.0.0"
+  },
+  "buildOptions": {
+    "name": "vuePorject"
+  }
+}
